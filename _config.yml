@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ZhangYe的技术博客
+title: ZhangYe's Blog
 description: >- # this means to ignore newlines until "baseurl:"
   这是一个专注于技术分享和学习的个人博客，主要涉及人工智能、编程开发等领域。
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -31,9 +31,6 @@ author: ZhangYe
 lang: zh-CN
 keywords: 人工智能, 编程开发, 技术博客
 
-# 评论系统设置 (使用 Disqus)
-disqus:
-  shortname: zhangye413-blog
 
 # Google Analytics
 google_analytics: UA-XXXXXXXX-X

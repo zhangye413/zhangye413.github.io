@@ -1,0 +1,185 @@
+---
+---
+
+@import "minima";
+
+// 全局样式
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// 导航栏样式
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+  padding: 15px 0;
+  margin-bottom: 30px;
+
+  .site-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .site-nav {
+    .page-link {
+      color: #666;
+      font-size: 16px;
+      margin-left: 20px;
+      
+      &:hover {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// 文章列表样式
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .post-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  .post-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .post-excerpt {
+    color: #666;
+    font-size: 16px;
+  }
+}
+
+// 文章内容样式
+.post {
+  .post-header {
+    margin-bottom: 30px;
+  }
+
+  .post-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .post-content {
+    margin-top: 20px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 30px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    code {
+      background-color: #f8f8f8;
+      border-radius: 3px;
+      padding: 2px 5px;
+    }
+
+    pre {
+      background-color: #f8f8f8;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  }
+}
+
+// 页脚样式
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  margin-top: 60px;
+
+  .footer-col-wrapper {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .social-media-list {
+    li + li {
+      padding-top: 5px;
+    }
+
+    .svg-icon {
+      fill: #666;
+
+      &:hover {
+        fill: #333;
+      }
+    }
+  }
+}
+
+// 响应式设计
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .post-title {
+    font-size: 24px;
+  }
+
+  .post-content {
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
