@@ -18,18 +18,36 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 张烨的技术博客
+title: ZhangYe的技术博客
 email: zhangye413@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   这是一个专注于技术分享和学习的个人博客，主要涉及人工智能、编程开发等领域。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zhangye413.github.io" # the base hostname & protocol for your site
+
+# 社交媒体设置
 github_username: zhangye413
+twitter_username: zhangye413
+linkedin_username: zhangye413
+
+# SEO 设置
+author: ZhangYe
+lang: zh-CN
+keywords: 人工智能, 编程开发, 技术博客
+
+# 评论系统设置 (使用 Disqus)
+disqus:
+  shortname: zhangye413-blog
+
+# Google Analytics
+google_analytics: UA-XXXXXXXX-X
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
