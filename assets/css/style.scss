@@ -484,3 +484,96 @@ body.dark-theme .theme-toggle {
     }
   }
 }
+
+// 目录栏样式
+.toc-container {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 250px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  z-index: 100;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
+  .toc-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 8px 0;
+      padding-left: 15px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #3498db;
+        transform: translateY(-50%);
+      }
+
+      a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #3498db;
+        }
+
+        &.active {
+          color: #3498db;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// 深色模式下的目录栏样式
+body.dark-theme .toc-container {
+  background: #2d2d2d;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  .toc-title {
+    color: #ffffff;
+    border-bottom-color: #3a3a3a;
+  }
+
+  .toc-list li {
+    &::before {
+      background: #3498db;
+    }
+
+    a {
+      color: #aaaaaa;
+
+      &:hover, &.active {
+        color: #3498db;
+      }
+    }
+  }
+}
