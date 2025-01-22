@@ -60,6 +60,114 @@ body {
 }
 
 // 深色模式样式
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+
+  .site-header {
+    background-color: #2d2d2d;
+    border-top-color: #3a3a3a;
+    border-bottom-color: #3a3a3a;
+
+    .site-title {
+      color: #e0e0e0;
+      
+      &:hover {
+        color: #3498db;
+      }
+    }
+
+    .site-nav .page-link {
+      color: #e0e0e0;
+      
+      &:hover {
+        color: #3498db;
+      }
+    }
+  }
+
+  .post-list > li {
+    background: #2d2d2d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    .post-link {
+      color: #e0e0e0;
+      
+      &:hover {
+        color: #3498db;
+      }
+    }
+
+    .post-meta {
+      color: #999;
+    }
+  }
+
+  .post {
+    background: #2d2d2d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    .post-title {
+      color: #e0e0e0;
+    }
+
+    .post-content {
+      h2, h3 {
+        color: #e0e0e0;
+      }
+    }
+  }
+
+  .site-footer {
+    background-color: #2d2d2d;
+    border-top-color: #3a3a3a;
+
+    .footer-col-wrapper {
+      color: #999;
+    }
+  }
+
+  // 主题切换按钮样式
+  .theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+
+    .theme-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .sun {
+      fill: #e0e0e0;
+      display: block;
+    }
+
+    .moon {
+      fill: none;
+      display: none;
+    }
+  }
+
+  &:not(.dark-theme) {
+    .theme-toggle {
+      .sun {
+        fill: none;
+        display: none;
+      }
+
+      .moon {
+        fill: #333;
+        display: block;
+      }
+    }
+  }
+}
+
 body.dark-mode {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -154,14 +262,29 @@ body.dark-mode {
     transform: scale(1.1);
   }
 
-  svg {
+  .theme-icon {
     width: 20px;
     height: 20px;
-    fill: #2c3e50;
   }
 
-  body.dark-mode & svg {
-    fill: #ffffff;
+  .sun {
+    display: none;
+    fill: #e0e0e0;
+  }
+
+  .moon {
+    display: block;
+    fill: #333;
+  }
+}
+
+// 深色模式下的图标显示
+body.dark-theme .theme-toggle {
+  .sun {
+    display: block;
+  }
+  .moon {
+    display: none;
   }
 }
 
