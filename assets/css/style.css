@@ -29,14 +29,23 @@ h2 {
   margin-bottom: 2em;
 }
 
+/* 文章标题样式 */
 .post-title {
-  font-size: 1.4em;
-  margin-bottom: 0.3em;
+  color: #24292e;  /* GitHub 风格的黑色 */
+  transition: color 0.3s ease;
 }
 
-.post-title a {
-  color: #0366d6;
-  text-decoration: none;
+.post-title:hover {
+  color: #555;  /* 鼠标悬停时的颜色 */
+}
+
+/* 深色模式下的标题颜色 */
+.dark-theme .post-title {
+  color: #e0e0e0;
+}
+
+.dark-theme .post-title:hover {
+  color: #fff;
 }
 
 .post-title a:hover {
@@ -66,4 +75,4 @@ h2 {
   body {
     padding: 15px;
   }
-} 
+}
