@@ -8,16 +8,6 @@ permalink: /about/
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
-
-  <div class="post-content">
-    <h2>关于我</h2>
-
-    <p>你可以通过以下方式联系我：</p>
-
-    <ul>
-      <li>GitHub: <a href="https://github.com/zhangye413">@zhangye413</a></li>
-    </ul>
-  </div>
 </article>
 
 <div align="center">
