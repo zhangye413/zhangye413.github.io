@@ -7,7 +7,6 @@ categories: AI 政策分析
 
 ![AI Leadership Abstract](/assets/images/posts/ai-abstract.jpg)
 
-在唐纳德·特朗普入主白宫之际...
 
 
 在唐纳德·特朗普入主白宫之际，高达5000亿美元

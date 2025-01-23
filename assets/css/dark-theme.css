@@ -86,3 +86,12 @@ body.dark-theme {
   background-color: #2d2d2d;
   border-color: #3a3a3a;
 }
+
+.dark-theme .site-title,
+.dark-theme .site-nav .page-link {
+  color: #e0e0e0;
+}
+
+.dark-theme .post-content {
+  color: #e0e0e0;
+}
