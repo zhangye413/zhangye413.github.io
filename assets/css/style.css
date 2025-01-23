@@ -30,9 +30,26 @@ h2 {
 }
 
 /* 文章标题样式 */
-.post-title {
-  color: #24292e;  /* GitHub 风格的黑色 */
+.post-list h3 a {
+  color: #24292e;  /* 默认黑色 */
+  text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.post-list h3 a:hover,
+.post-list h3 a:focus {
+  color: #0366d6;  /* 鼠标悬停时的蓝色 */
+  text-decoration: none;
+}
+
+/* 深色模式下的颜色 */
+.dark-theme .post-list h3 a {
+  color: #e0e0e0;  /* 深色模式下的默认颜色 */
+}
+
+.dark-theme .post-list h3 a:hover,
+.dark-theme .post-list h3 a:focus {
+  color: #58a6ff;  /* 深色模式下鼠标悬停的颜色 */
 }
 
 .post-title:hover {
