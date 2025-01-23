@@ -2,10 +2,17 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Posts</a>
+      <a href="{{ '/archive' | relative_url }}">Archive</a>
+      <a href="{{ '/about' | relative_url }}">About</a>
+    </nav>
+
     <main>
       {{ content }}
     </main>
