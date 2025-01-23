@@ -1,0 +1,7 @@
+@use "sass:math";
+
+$spacing-base: 8px;
+
+@function spacing($multiplier: 1) {
+  @return calc($spacing-base * $multiplier);
+}

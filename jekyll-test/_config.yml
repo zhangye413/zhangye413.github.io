@@ -14,29 +14,25 @@
 #
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, and so on.
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Test Blog
-description: Test blog for debugging
-baseurl: ""
-url: ""
-
-# 社交媒体设置
-
-# SEO 设置
-author: ZhangYe
-lang: zh-CN
-keywords: 人工智能, 编程开发, 技术博客
-
-
-# Google Analytics
-google_analytics: UA-XXXXXXXX-X
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Build settings
-theme: null
-plugins: []
+theme: minima
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,22 +53,3 @@ plugins: []
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-kramdown:
-  auto_ids: false
-  parse_block_html: false
-  syntax_highlighter_opts:
-    disable: true
-  toc_levels: []
-  html_to_native: true
-  remove_block_html_tags: true
-
-# 添加这些设置
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# ... 其他配置保持不变 ...

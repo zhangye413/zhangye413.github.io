@@ -66,7 +66,7 @@ permalink: /about/
 <h3 align="center">📫 Get in Touch</h3>
 
 <div align="center">
-  <a href="https://github.com/zhangye">
+  <a href="https://github.com/zhangye413">
     <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github" />
   </a>
   &nbsp;
