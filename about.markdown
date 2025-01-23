@@ -1,8 +1,24 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">
+    <h2>关于我</h2>
+
+    <p>你可以通过以下方式联系我：</p>
+
+    <ul>
+      <li>GitHub: <a href="https://github.com/zhangye413">@zhangye413</a></li>
+    </ul>
+  </div>
+</article>
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=2F93F7&center=true&vCenter=true&width=435&lines=Hello%2C+I'm+zhangye+%F0%9F%91%8B;Welcome+to+my+space!" alt="Typing SVG" />
