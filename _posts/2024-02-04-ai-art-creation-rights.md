@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 当机器读懂艺术：AI时代的创作权之思
 date: 2024-02-04
 categories:
