@@ -1,0 +1,36 @@
+@use "sass:math";
+
+$spacing-unit: 30px;
+
+.wrapper {
+  max-width: calc($content-width - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc($spacing-unit / 2);
+  padding-left: calc($spacing-unit / 2);
+}
+
+.post-meta {
+  margin-bottom: calc($spacing-unit / 2);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: calc($spacing-unit / 2);
+  }
+}
+
+.post-content {
+  margin-bottom: calc($spacing-unit);
+
+  h2 {
+    margin-top: calc($spacing-unit);
+  }
+
+  h3 {
+    margin-top: calc($spacing-unit / 2);
+  }
+}

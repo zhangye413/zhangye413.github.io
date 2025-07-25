@@ -18,11 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ZhangYe's Blog
-description: >- # this means to ignore newlines until "baseurl:"
-  这是一个专注于技术分享和学习的个人博客，主要涉及人工智能、编程开发等领域。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zhangye413.github.io" # the base hostname & protocol for your site
+title: Zhang Ye's Blog
+description: 记录我的学习笔记
+baseurl: ""
+url: ""
 
 # 社交媒体设置
 
@@ -36,24 +35,8 @@ keywords: 人工智能, 编程开发, 技术博客
 google_analytics: UA-XXXXXXXX-X
 
 # Build settings
-# 主题设置
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-toc  # 如果您想使用 jekyll-toc 插件
-
-# TOC 设置
-toc:
-  min_level: 1
-  max_level: 3
-  ordered_list: false
-  no_toc_section_class: no_toc_section
-  list_class: section-nav
-  sublist_class: ''
-  item_class: toc-entry
-  enable: true
+theme: null
+plugins: []
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -74,3 +57,22 @@ toc:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+kramdown:
+  auto_ids: false
+  parse_block_html: false
+  syntax_highlighter_opts:
+    disable: true
+  toc_levels: []
+  html_to_native: true
+  remove_block_html_tags: true
+
+# 添加这些设置
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# ... 其他配置保持不变 ...

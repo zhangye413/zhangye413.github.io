@@ -1,0 +1,61 @@
+/* 控制目录显示 */
+.post-content {
+  position: relative;
+}
+
+/* 只保留一个目录容器 */
+#markdown-toc-wrapper {
+  display: block;
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+/* 隐藏所有其他目录 */
+.toc,
+.section-nav,
+.table-of-contents,
+#markdown-toc:not(#markdown-toc-wrapper #markdown-toc) {
+  display: none !important;
+}
+
+/* 确保只有第一个目录显示 */
+#markdown-toc-wrapper:first-of-type {
+  display: block;
+  grid-column: 2;
+}
+
+#markdown-toc-wrapper:not(:first-of-type) {
+  display: none !important;
+}
+
+/* 目录链接样式 */
+#markdown-toc-wrapper a {
+  color: #495057;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  padding: 0.2rem 0;
+}
+
+#markdown-toc-wrapper a:hover {
+  color: #228be6;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  #markdown-toc-wrapper {
+    position: relative;
+    grid-column: 1;
+    margin-bottom: 2rem;
+  }
+}

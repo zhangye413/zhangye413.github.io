@@ -1,8 +1,14 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+</article>
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=2F93F7&center=true&vCenter=true&width=435&lines=Hello%2C+I'm+zhangye+%F0%9F%91%8B;Welcome+to+my+space!" alt="Typing SVG" />
@@ -66,7 +72,7 @@ permalink: /about/
 <h3 align="center">📫 Get in Touch</h3>
 
 <div align="center">
-  <a href="https://github.com/zhangye">
+  <a href="https://github.com/zhangye413">
     <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github" />
   </a>
   &nbsp;

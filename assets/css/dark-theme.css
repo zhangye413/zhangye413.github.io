@@ -6,8 +6,7 @@ body.dark-theme {
 
 .dark-theme .site-header {
   background-color: #2d2d2d;
-  border-top-color: #3a3a3a;
-  border-bottom-color: #3a3a3a;
+  border-color: #3a3a3a;
 }
 
 .dark-theme .site-title,
@@ -15,47 +14,84 @@ body.dark-theme {
   color: #e0e0e0;
 }
 
-.dark-theme .post-list > li {
-  background-color: #2d2d2d;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.dark-theme .post-link {
+.dark-theme .post-content {
   color: #e0e0e0;
 }
 
-.dark-theme .post {
-  background-color: #2d2d2d;
+.dark-theme #markdown-toc-wrapper {
+  background: #2d2d2d;
+  border-color: #3a3a3a;
 }
 
-.dark-theme .post-meta {
-  color: #888;
+.dark-theme #markdown-toc-wrapper a {
+  color: #e0e0e0;
 }
 
-.dark-theme .theme-toggle .sun {
-  display: none;
-}
-
-.dark-theme .theme-toggle .moon {
-  display: block;
-}
-
-/* 亮色主题下隐藏月亮图标 */
-.theme-toggle .moon {
-  display: none;
+.dark-theme #markdown-toc-wrapper a:hover {
+  color: #4dabf7;
 }
 
 /* 主题切换按钮样式 */
 .theme-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   padding: 5px;
   cursor: pointer;
   color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
 }
 
 .theme-icon {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: rotate(30deg);
+}
+
+/* 默认显示太阳图标 */
+.theme-icon .moon {
+  display: none;
+}
+
+/* 深色模式下显示月亮图标 */
+.dark-theme .theme-icon .sun {
+  display: none;
+}
+
+.dark-theme .theme-icon .moon {
+  display: block;
+}
+
+/* 深色主题样式 */
+.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-theme .site-header {
+  background-color: #2d2d2d;
+  border-color: #3a3a3a;
+}
+
+.dark-theme .site-title,
+.dark-theme .site-nav .page-link {
+  color: #e0e0e0;
+}
+
+.dark-theme .post-content {
+  color: #e0e0e0;
 }
